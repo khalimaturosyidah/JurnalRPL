@@ -3,7 +3,7 @@ import java.io.*;
 public static void main(String args[]) 
     {
         String str;
-        int no,f1,f2,f3;
+        int no,f1,f2,f3,jumlah = 0;
         f2=0;
         f3=1;
 
@@ -14,18 +14,17 @@ public static void main(String args[])
              str=obj.readLine();
              no=Integer.parseInt(str);
 
-             System.out.print(f3+"  ");
-             System.out.flush();
                   while(no>1)
                   {
                           f1=f2;
                           f2=f3;
                           f3=f1+f2;
-                          System.out.print(f3+"  ");
-                          System.out.flush();
+                          jumlah=f1+f2+f3;
                           no=no-1;
                  }
+                  System.out.print(jumlah);
              }
+
         catch(Exception e)
         {}
     }
