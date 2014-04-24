@@ -14,14 +14,14 @@ public static void main(String args[])
              str=obj.readLine();
              no=Integer.parseInt(str);
 
-             System.out.print(f3+"  ");
+             System.out.print(f1+"  ");
              System.out.flush();
-                  while(no>1)
+                  while(no<1)
                   {
                           f1=f2;
                           f2=f3;
                           f3=f1+f2;
-                          System.out.print(f3+"  ");
+                          System.out.print(f1+"  ");
                           System.out.flush();
                           no=no-1;
                  }
